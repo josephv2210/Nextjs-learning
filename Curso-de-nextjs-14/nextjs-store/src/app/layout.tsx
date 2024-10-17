@@ -1,9 +1,6 @@
-'use client'
-
 import localFont from "next/font/local";
-import "./globals.css";
-import { Header } from "./components/Header";
-
+import { Header } from "./components/shared/Header";
+import { Footer } from "./components/shared/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,21 +13,19 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-console.log('Hola layout');
-
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

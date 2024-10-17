@@ -1,13 +1,13 @@
-// 'use client'
-
-import Image from "next/image";
+import { Description } from "./components/home/Description";
+import { Hero } from "./components/home/Hero";
+import { MainProducts } from "./components/home/MainProducts/MainProducts";
 
 export default function Home() {
-
-  console.log('hola mundo')
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
-        <h1>Hola mundo</h1>
+      <Hero/>
+      <Description />
+      <MainProducts/>
     </div>
   );
 }
