@@ -9,10 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#001',
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary': '#13111a',
+        'secondary': '#e4e1f6',
+        'border-color': '#302c3f',
+        'text-color': '#fff',
+        'main-contrast': '#ff4980',
+        'background': "var(--background)",
+        'foreground': "var(--foreground)",
       },
+      backgroundImage: {
+        'primary-gradient': 'linear-gradient(270deg, #4f56ff, #ff4980)',
+      }
     },
   },
   plugins: [],
