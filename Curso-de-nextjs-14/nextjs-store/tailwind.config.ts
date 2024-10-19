@@ -19,6 +19,9 @@ const config: Config = {
       },
       backgroundImage: {
         'primary-gradient': 'linear-gradient(270deg, #4f56ff, #ff4980)',
+      },
+      boxShadow: {
+        'brShadow': '0 0 4rem rgba(255, 255, 255, 0.2)',
       }
     },
   },
