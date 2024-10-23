@@ -1,18 +1,15 @@
-import localFont from "next/font/local";
+import { Inter } from 'next/font/google';
 import { Header } from "./components/shared/Header";
 import { Footer } from "./components/shared/Footer";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({
+  weight: ["100", "300", "500"],
+  subsets: ["latin"] 
+})
+
+const classBody = "m-0 p-0 bg-primary text-text-color"
+
 
 export default function RootLayout({
   children,
@@ -22,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='m-0 p-0 bg-primary text-text-color'
+        className={`${inter.className} ${classBody}`}
       >
         <Header />
         {children}

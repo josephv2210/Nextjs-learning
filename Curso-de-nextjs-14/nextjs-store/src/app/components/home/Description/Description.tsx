@@ -17,7 +17,7 @@ export const Description = () => {
         />
       </div>
       <div>
-        <h2 className="text-4xl font-semibold text-secondary m-0">
+        <h2 className="text-4xl font-roboto font-semibold text-secondary m-0">
           Description
         </h2>
         <p className="text-2xl leading-8 text-text-color">

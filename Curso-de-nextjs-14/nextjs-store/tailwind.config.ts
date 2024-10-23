@@ -22,6 +22,9 @@ const config: Config = {
       },
       boxShadow: {
         'brShadow': '0 0 4rem rgba(255, 255, 255, 0.2)',
+      },
+      fontFamily:{
+        roboto: ['Roboto', 'sans-serif'],
       }
     },
   },
