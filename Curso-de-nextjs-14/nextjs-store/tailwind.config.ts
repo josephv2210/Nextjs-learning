@@ -16,6 +16,7 @@ const config: Config = {
         'main-contrast': '#ff4980',
         'background': "var(--background)",
         'foreground': "var(--foreground)",
+        'pr-color-gradient': 'linear-gradient(270deg, #4f56ff, #ff4980)',
       },
       backgroundImage: {
         'primary-gradient': 'linear-gradient(270deg, #4f56ff, #ff4980)',
