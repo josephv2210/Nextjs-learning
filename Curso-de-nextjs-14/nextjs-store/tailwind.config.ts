@@ -26,7 +26,10 @@ const config: Config = {
       },
       fontFamily:{
         roboto: ['Roboto', 'sans-serif'],
-      }
+      },
+      gridTemplateRows: {
+        'custom': '400px 400px',
+      },
     },
   },
   plugins: [],
