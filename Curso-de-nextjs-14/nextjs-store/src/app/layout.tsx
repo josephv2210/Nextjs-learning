@@ -1,15 +1,16 @@
-import { Inter } from 'next/font/google';
-import { Header } from "./components/shared/Header";
-import { Footer } from "./components/shared/Footer";
+import { Inter } from "next/font/google";
+import { Header } from "../components/shared/Header";
+
+
+import { Footer } from "../components/shared/Footer";
 import "./globals.css";
 
 const inter = Inter({
   weight: ["100", "300", "500"],
-  subsets: ["latin"] 
-})
+  subsets: ["latin"],
+});
 
-const classBody = "m-0 p-0 bg-primary text-text-color"
-
+const classBody = "m-0 p-0 bg-primary text-text-color";
 
 export default function RootLayout({
   children,
@@ -18,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} ${classBody}`}
-      >
+      <body className={`${inter.className} ${classBody}`}>
         <Header />
+        
+
         {children}
         <Footer />
       </body>

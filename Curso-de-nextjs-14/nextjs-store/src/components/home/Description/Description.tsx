@@ -3,7 +3,7 @@
 import Image from "next/image";
 import classNames from "classnames"; // Importamos la librería classnames
 
-import { PLACEHOLDER_IMAGE } from "../../../../../public/images/blurImages";
+import { PLACEHOLDER_IMAGE } from "../../../../public/images/blurImages";
 import { useState } from "react";
 
 export const Description = () => {
